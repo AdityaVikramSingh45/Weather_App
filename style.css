@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.container{
+    width:400px;
+    height: min-content;
+    background-color: #ffffff71;
+    border-radius: 12px;
+    padding: 28px;
+}
+
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box input{
+    font-size: 18px;
+    text-transform: capitalize;
+    width: 84%;
+    background-color: #e6f5fb;
+    border-radius: 14px;
+    padding: 12px 16px;
+}
+
+.search-box input::placeholder{
+    color: black;
+}
+
+.search-box button{
+    width: 46px;
+    background-color: #e6f5fb;
+    border-radius: 50%;
+    height: 46px;
+    cursor: pointer;
+}
+
+.search-icon{
+    height: 18px;
+    background-color: #e6f5fb;
+    border-radius: 15px;
+}
+
+.weather-body{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+
+}
+
+.weather-box{
+    margin-block: 15px;
+    text-align: center;
+}
+
+.weather-box .temp{
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.weather-box .desc{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+
+
+}
+.weather-img{
+    width: 60%;
+}
+
+.weather-details{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wind{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.humd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px; 
+    max-width: 200px;/
+}
+
+.humd img, .wind img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px; /* Space between image and description */
+}
+
+.humd-desc, .wind-desc{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333; /* Dark grey text color */
+    margin: 0;
+    padding: 5px 0; /* Padding around the text */
+}
+
+.wind-details, .humd.details {
+    font-size: 1em;
+    margin: 0;
+    padding: 4px 0; /* Padding around the text */
+}
+.location-not-found{
+    display: none;
+}
+
+.location-not-found img{
+    margin-top: 20px;
+    width: 40vh;
+    border-radius: 20px;
+}    

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="Enter your location " class="input-box">
+                <button><img src="images/search.png" class="search-icon"></button>
+            </div>
+        </div>
+        <div class="location-not-found" >
+            <img src="dhttps://png.pngtree.com/background/20230827/original/pngtree-error-404-on-a-blackboard-background-conceptual-lcd-error-404-photo-picture-image_4835779.jpg">
+        </div>
+        <div class="weather-body">
+            <img src="images/clouds.png" class="weather-img">
+            <div class="weather-box">
+                <p class="temp">0°C</p>
+                <p class="desc">Cloudy</p>
+            </div>
+            
+        </div>
+        <div class="weather-details">
+            <div class="humd">
+                <img src="images/humidity.png">
+                <p class="humd-desc">Humidity</p>
+                <p class="humd-details">45%</p>
+            </div>
+            <div class="wind">
+                <img src="images/wind.png">
+                <p class="wind-desc">Wind Speed</p>
+                <p class="wind-details">20kmph</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
